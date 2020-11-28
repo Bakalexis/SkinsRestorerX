@@ -16,6 +16,7 @@ public class Config {
     public static List<String> DEFAULT_SKINS = null;
     public static boolean DISABLED_SKINS_ENABLED = false;
     public static List<String> DISABLED_SKINS = null;
+    public static List<String> DISABLED_SERVERS = null;
     public static boolean CUSTOM_GUI_ENABLED = false;
     public static boolean CUSTOM_GUI_ONLY = false;
     public static List<String> CUSTOM_GUI_SKINS = null;
@@ -61,6 +62,7 @@ public class Config {
         DEFAULT_SKINS = config.getStringList("DefaultSkins.Names");
         DISABLED_SKINS_ENABLED = config.getBoolean("DisabledSkins.Enabled", DISABLED_SKINS_ENABLED);
         DISABLED_SKINS = config.getStringList("DisabledSkins.Names");
+        DISABLED_SERVERS = config.getStringList("DisabledServers.Names");
         CUSTOM_GUI_ENABLED = config.getBoolean("CustomGUI.Enabled", CUSTOM_GUI_ENABLED);
         CUSTOM_GUI_ONLY = config.getBoolean("CustomGUI.ShowOnlyCustomGUI", CUSTOM_GUI_ONLY);
         CUSTOM_GUI_SKINS = config.getStringList("CustomGUI.Names");

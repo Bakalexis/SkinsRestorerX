@@ -31,6 +31,11 @@ public class SkinApplier {
             uuid = p.getUniqueId().toString();
             handler = (InitialHandler) p.getPendingConnection();
         }
+        
+        if(Config.DisabledServer.contains(p.getServerInfo().getName()) {
+            return;
+        }
+        
         Property textures = (Property) plugin.getSkinStorage().getOrCreateSkinForPlayer(nick);
 
         if (handler.isOnlineMode()) {
